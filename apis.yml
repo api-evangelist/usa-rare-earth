@@ -1,7 +1,14 @@
 aid: usa-rare-earth
 name: USA Rare Earth
-description: 'USA Rare Earth is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'USA Rare Earth, Inc. (Nasdaq: USAR) is an American critical-minerals and advanced-materials
+  company building a domestic mine-to-magnet rare earth supply chain. It operates a 310,000 sq. ft. sintered
+  neodymium-iron-boron (NdFeB) permanent magnet manufacturing facility in Stillwater, Oklahoma, and holds
+  the Round Top heavy rare earth and critical minerals deposit in Hudspeth County, West Texas. The company
+  produces rare earth elements, oxides, metals and sintered permanent magnets for defense, automotive,
+  robotics, industrial and clean-energy customers, with the stated aim of reducing U.S. dependence on
+  offshore rare earth processing and magnet production. It is a materials producer and manufacturer, not a
+  software or data company, and publishes no public developer program, API, or machine-readable interface.'
+image: https://www.usare.com/wp-content/uploads/2026/03/usare-main-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/usa-rare-earth/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +19,15 @@ created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Rare Earth
+- Critical Minerals
+- Advanced Materials
+- Permanent Magnets
+- Mining
+- Manufacturing
+- Supply Chain
+- Defense
+- Energy
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,52 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/usa-rare-earth-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/usa-rare-earth_stock/
+  url: https://www.usare.com/
+- type: About
+  url: https://www.usare.com/about/
+- type: Contact
+  url: https://www.usare.com/contact/
+- type: Newsroom
+  url: https://www.usare.com/newsroom/
+- type: PressReleases
+  url: https://investors.usare.com/news-events/news-releases
+- type: BlogFeeds
+  url: https://www.usare.com/feed/
+- type: Investors
+  url: https://investors.usare.com/
+- type: Careers
+  url: https://careers.usare.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/usarareearth
+- type: PrivacyPolicy
+  url: https://www.usare.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.usare.com/standard-terms-and-conditions-of-usa-rare-earth-llc/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    USA Rare Earth makes physical goods — sintered NdFeB magnets and rare earth oxides/metals —
+    and www.usare.com is a WordPress marketing site whose only machine-readable endpoint is the
+    /wp-json index; every spec and /.well-known/ path 404s and the site's own WordPress REST
+    content routes answer 401 rest_forbidden, so there is no developer surface to profile.
+  evidence:
+  - url: https://www.usare.com/openapi.json
+    status: 404
+  - url: https://www.usare.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.usare.com/wp-json/wp/v2/posts
+    status: 401
+  - url: https://www.usare.com/llms.txt
+    status: 404
+  - url: https://investors.usare.com/llms.txt
+    status: 404
+  checked: '2026-08-05'
