@@ -8,6 +8,17 @@ description: 'USA Rare Earth, Inc. (Nasdaq: USAR) is an American critical-minera
   robotics, industrial and clean-energy customers, with the stated aim of reducing U.S. dependence on
   offshore rare earth processing and magnet production. It is a materials producer and manufacturer, not a
   software or data company, and publishes no public developer program, API, or machine-readable interface.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.usare.com/wp-content/uploads/2026/03/usare-main-logo.png
 url: https://raw.githubusercontent.com/api-evangelist/usa-rare-earth/refs/heads/main/apis.yml
 x-type: company
