@@ -1,0 +1,61 @@
+edges:
+- partner_name: CHIPS for America (award recipients)
+  partner: null
+  partner_match: register
+  type: register
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.nist.gov/chips/chips-program-office-awards
+  category: semiconductor funding award
+  contract_reference:
+    register: 'CHIPS for America award recipients (nist.gov/chips: Program Office + R&D Office awards)'
+    standard: CHIPS and Science Act
+    spec_file: null
+    role: chips-award-recipient
+    registered_name: USA Rare Earth
+    register_id: https://www.nist.gov/chips/chips-program-office-awards
+    matched_domain: usare.com
+    matched_by: domain
+    awards:
+    - office: CHIPS Program Office
+      site: Blacksburg, SC
+      amount: $277 million in direct funding (split across project in Sierra Blanca, TX, Stillwater, OK, and Blacksburg,
+        SC)
+      status: awarded
+    - office: CHIPS Program Office
+      site: Stillwater, OK
+      amount: $277 million in direct funding (split across project in Sierra Blanca, TX, Stillwater, OK, and Blacksburg,
+        SC)
+      status: awarded
+    - office: CHIPS Program Office
+      site: Sierra Blanca, TX
+      amount: $277 million in direct funding (split across project in Sierra Blanca, TX, Stillwater, OK, and Blacksburg,
+        SC)
+      status: awarded
+    signal_note: 'participation only: a federal funding award (manufacturing incentive or R&D), not conformance;
+      award count and amounts are context, never counted'
+    detected_by: sweep-semiconductor-consortia.py
+    detected: '2026-10-21'
+    identity: wikidata Q136659556 'USA Rare Earth' P856 https://www.usare.com/
+    identity_source: wikidata P856 (register gives names only; labelled provenance step)
+  detected_by: sweep-semiconductor-consortia.py
+  first_seen: '2026-10-21'
+generated: '2026-10-21'
+method: searched
+source:
+- https://riscv.org/members/
+- https://riscv.landscape2.io/data/full.json
+- https://www.opencompute.org/products
+- https://www.opencompute.org/wp-json/wp/v2/marketplace
+- https://www.opencompute.org/wp-json/wp/v2/companies
+- https://www.nist.gov/chips/chips-program-office-awards
+- https://www.nist.gov/chips/chips-rd-office-awards
+checked:
+- https://riscv.landscape2.io/data/full.json
+- https://riscv.org/members/
+- https://www.nist.gov/chips/chips-program-office-awards
+- https://www.nist.gov/chips/chips-rd-office-awards
+- https://www.opencompute.org/products
+- https://www.opencompute.org/wp-json/wp/v2/companies
+- https://www.opencompute.org/wp-json/wp/v2/marketplace
